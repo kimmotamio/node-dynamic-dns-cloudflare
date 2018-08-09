@@ -1,0 +1,18 @@
+{
+  "name": "dynamic-dns-cf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dynamic-dns-cf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dynamic-dns-cf.js"
+  },
+  "author": "Kimmo Tamio",
+  "license": "MIT",
+  "dependencies": {
+    "cron": "^1.3.0",
+    "dotenv": "^6.0.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
