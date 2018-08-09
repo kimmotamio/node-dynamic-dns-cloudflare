@@ -19,7 +19,7 @@ const job = new CronJob({
 		const cloudflareIpRequest = request(cfParams);
 
 		Promise.all([ipRequest, cloudflareIpRequest]).then((data) => {
-            const ip = data[0];
+			const ip = data[0];
 			const cloudflare = JSON.parse(data[1]);
 			const domainId = cloudflare.result[0].id;
 			const name = process.env.SUBDOMAIN !== undefined ? process.env.SUBDOMAIN : process.env.DOMAIN;
