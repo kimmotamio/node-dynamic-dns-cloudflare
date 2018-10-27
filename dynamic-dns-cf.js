@@ -37,7 +37,7 @@ const job = new CronJob({
 					cfParams.json = {
 						type: 'A',
 						name: name,
-						content: ipinfo.ip
+						content: ip
 					};
 
 					request(cfParams).then((updatedDns) => {
